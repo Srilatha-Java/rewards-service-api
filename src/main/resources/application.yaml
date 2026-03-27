@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:rewardsdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+reward:
+  points:
+    first-threshold: 50
+    second-threshold: 100
+    first-multiplier: 1
+    second-multiplier: 2
