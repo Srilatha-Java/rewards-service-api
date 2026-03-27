@@ -1,7 +1,6 @@
 package com.rewards.service.impl;
 
 import com.rewards.dto.RewardResponseDTO;
-import com.rewards.entity.Customer;
 import com.rewards.entity.Transaction;
 import com.rewards.exception.CustomerNotFoundException;
 import com.rewards.repository.CustomerRepository;
@@ -30,7 +29,7 @@ public class RewardServiceImpl implements RewardService {
     @Override
     public RewardResponseDTO getRewards(Long customerId) {
 
-        Customer customer = customerRepository.findById(customerId)
+        customerRepository.findById(customerId)
                 .orElseThrow(() ->
                         new CustomerNotFoundException("Customer not found: " + customerId));
 

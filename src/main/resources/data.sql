@@ -27,7 +27,4 @@ INSERT INTO transactions (customer_id, amount, transaction_date)
 VALUES (1, 100, CURRENT_DATE - 25);
 
 INSERT INTO transactions (customer_id, amount, transaction_date)
-VALUES (1, -55, CURRENT_DATE - 12);
-
-INSERT INTO transactions (customer_id, amount, transaction_date)
 VALUES (1, 200, CURRENT_DATE - 120);

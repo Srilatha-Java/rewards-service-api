@@ -61,8 +61,6 @@ VALUES (1, 30, CURRENT_DATE - 15);
 INSERT INTO transactions (customer_id, amount, transaction_date)
 VALUES (1, 180, CURRENT_DATE - 25);
 
-INSERT INTO transactions (customer_id, amount, transaction_date)
-VALUES (1, -55, CURRENT_DATE - 12);
 ```
 
 ---
