@@ -102,14 +102,6 @@ http://localhost:8080/api/rewards/1
 
 ---
 
-### Get rewards for all customers
-
-```
-GET /api/rewards
-```
-
----
-
 ### Error Case (Customer Not Found)
 
 ```

@@ -2,8 +2,6 @@ package com.rewards.service;
 
 import com.rewards.dto.RewardResponseDTO;
 
-import java.util.List;
-
 /**
  * Service interface for reward calculation operations.
  */

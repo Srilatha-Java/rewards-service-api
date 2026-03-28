@@ -47,18 +47,4 @@ class RewardIntegrationTests {
         mockMvc.perform(get("/api/rewards/9999"))
                 .andExpect(status().isNotFound());
     }
-
-    /**
-     * Test Get Rewards for all customers
-     */
-    @Test
-    void shouldReturnRewardsForAllCustomers() throws Exception {
-
-        mockMvc.perform(get("/api/rewards"))
-                .andExpect(status().isOk())
-                .andExpect(jsonPath("$").isArray())
-                .andExpect(jsonPath("$[0].customerId").exists())
-                .andExpect(jsonPath("$[0].monthlyPoints").exists())
-                .andExpect(jsonPath("$[0].totalPoints").exists());
-    }
 }
